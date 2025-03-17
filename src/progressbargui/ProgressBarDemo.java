@@ -16,6 +16,8 @@ public class ProgressBarDemo {
         bar.setBounds(0, 0, 420, 50);
         bar.setStringPainted(true);
         bar.setFont(new Font("MV Boli", Font.BOLD, 25));
+        bar.setForeground(Color.red);
+        bar.setBackground(Color.BLACK);
         
         frame.add(bar);
         
