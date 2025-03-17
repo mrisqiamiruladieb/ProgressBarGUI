@@ -7,7 +7,7 @@ public class ProgressBarDemo {
     
     //declare
     JFrame frame = new JFrame();
-    JProgressBar bar = new JProgressBar();
+    JProgressBar bar = new JProgressBar(0, 100);
     
     //construct
     ProgressBarDemo() {
