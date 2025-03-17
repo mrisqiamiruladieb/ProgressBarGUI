@@ -22,6 +22,26 @@ public class ProgressBarDemo {
         frame.setSize(420, 420);
         frame.setLayout(null);
         frame.setVisible(true);
+        
+        fill();
     }
     
+    //method
+    public void fill() {
+        int counter = 0;
+        
+        while (counter <= 100) {
+            
+            bar.setValue(counter);
+            
+            try {
+                Thread.sleep(50);
+            }
+            catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            
+            counter += 1;
+        }
+    }
 }
