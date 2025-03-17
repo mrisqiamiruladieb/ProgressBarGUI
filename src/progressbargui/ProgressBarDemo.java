@@ -15,6 +15,7 @@ public class ProgressBarDemo {
         bar.setValue(0);
         bar.setBounds(0, 0, 420, 50);
         bar.setStringPainted(true);
+        bar.setFont(new Font("MV Boli", Font.BOLD, 25));
         
         frame.add(bar);
         
@@ -43,5 +44,8 @@ public class ProgressBarDemo {
             
             counter += 1;
         }
+        
+        bar.setString("Done :)");
+        
     }
 }
